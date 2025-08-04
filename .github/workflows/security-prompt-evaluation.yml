@@ -19,6 +19,7 @@ jobs:
     with:
       pr-number: ${{ github.event.pull_request.number }}
       repository: ${{ github.repository }}
+      auto-close-on-fail: true
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
       anthropic-api-key: ${{ secrets.ANTHROPIC_API_KEY }}
